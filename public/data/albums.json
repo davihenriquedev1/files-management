@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "title": "Christmas",
+        "photos": [
+            {"id": 1, "url": "/data/images/christmas/christmas1.jpg"},
+            {"id": 2, "url": "/data/images/christmas/christmas2.jpg"},
+            {"id": 3, "url": "/data/images/christmas/christmas3.jpg"}
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Family",
+        "photos": [
+            {"id": 4, "url": "/data/images/family/family1.jpg"},
+            {"id": 5, "url": "/data/images/family/family2.jpg"},
+            {"id": 6, "url": "/data/images/family/family3.jpg"}
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Animals",
+        "photos": [
+            {"id": 7, "url": "/data/images/animals/bob1.jpg"},
+            {"id": 8, "url": "/data/images/animals/bob2.jpg"},
+            {"id": 9, "url": "/data/images/animals/nilson1.jpg"}
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Vacation - 2015",
+        "photos": [
+            {"id": 10, "url": "/data/images/vacation/vacation-20151.jpg"},
+            {"id": 11, "url": "/data/images/vacation/vacation-20152.jpg"},
+            {"id": 12, "url": "/data/images/vacation/vacation-20153.jpg"}
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Anniversary",
+        "photos": [
+            {"id": 13, "url": "/data/images/anniversary/anniversary1.jpg"},
+            {"id": 14, "url": "/data/images/anniversary/anniversary2.jpg"},
+            {"id": 15, "url": "/data/images/anniversary/anniversary3.jpg"}
+        ]
+    }
+]
