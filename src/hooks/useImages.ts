@@ -29,8 +29,5 @@ export const useImages = () => {
         };
         fetchImages();
     }, []);
-
-    console.log(albums)
-    console.log(imagesNoFolder)
     return { albums, imagesNoFolder, loading, error };
 };
