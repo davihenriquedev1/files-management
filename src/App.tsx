@@ -25,12 +25,12 @@ function App() {
 				<div className="flex justify-center items-center gap-1">
 					<div className="rounded-full justify-center items-center">
 						<button type="button" title="back" onClick={backRoute} disabled={!hasPrevious} className="bg-white/30 p-2 flex justify-center items-center disabled:bg-black/20">
-							<img src="/images/arrow.png" alt="" className="w-2"/>
+							<img src="/assets/images/arrow.png" alt="" className="w-2"/>
 						</button>
 					</div>
 					<div className="rounded-full justify-center items-center">
 						<button type="button" title="next" onClick={nextRoute} disabled={!hasNext} className="bg-white/40 p-2 flex justify-center items-center disabled:bg-black/20">
-							<img src="/images/arrow.png" alt="" className="w-2 rotate-180"/>
+							<img src="/assets/images/arrow.png" alt="" className="w-2 rotate-180"/>
 						</button>
 					</div>
 				</div>
@@ -45,7 +45,7 @@ function App() {
 			<main className="flex min-h-screen w-full bg-white p-4">
 				<MainRoutes />
 			</main>
-			<iframe title="ads" className="flex absolute rigtht-0 bottom-0 h-12 w-full text-center py-4 shadow-inner z-0">
+			<iframe title="ads" className="fixed left-0 bottom-0 h-12 w-full text-center py-4 shadow-inner -z-1">
 			</iframe>
 		</div>
 	);

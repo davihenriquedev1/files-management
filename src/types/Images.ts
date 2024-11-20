@@ -7,5 +7,6 @@ export type Image = {
 export type Album = {
     id: number,
     title: string,
-    photos: Image[]
+    photos: Image[],
+    subFolders? : Album[]
 }

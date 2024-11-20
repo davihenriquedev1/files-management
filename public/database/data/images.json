@@ -1,0 +1,65 @@
+{
+    "folders": [
+        {
+            "id": 1,
+            "title": "Christmas",
+            "photos": [
+                {"id": 1, "name": "christmas1.jpg", "url": "/database/images/christmas/christmas1.jpg"},
+                {"id": 2, "name": "christmas2.jpg", "url": "/database/images/christmas/christmas2.jpg"},
+                {"id": 3, "name": "christmas3.jpg", "url": "/database/images/christmas/christmas3.jpg"}
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Family",
+            "photos": [
+                {"id": 4, "name": "family1.jpg", "url": "/database/images/family/family1.jpg"},
+                {"id": 5, "name": "family2.jpg", "url": "/database/images/family/family2.jpg"},
+                {"id": 6, "name": "family3.jpg", "url": "/database/images/family/family3.jpg"}
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Animals",
+            "photos": [],
+            "subFolders": [
+                {
+                    "id": 6, 
+                    "title":"Bob", 
+                    "photos": [
+                        {"id": 7, "name": "bob1.jpg", "url": "/database/images//bob/animals/bob1.jpg"},
+                        {"id": 8, "name": "bob2.jpg", "url": "/database/images/bob/animals/bob2.jpg"}
+                    ]
+                },
+                {
+                    "id": 7, 
+                    "title":"Nilson", 
+                    "photos": [
+                        {"id": 9, "name": "nilson1.jpg", "url": "/database/images/animals/nilson/nilson1.jpg"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Vacation - 2015",
+            "photos": [
+                {"id": 10, "name": "vacation-20151.jpg", "url": "/database/images/vacation/vacation-20151.jpg"},
+                {"id": 11, "name": "vacation-20152.jpg", "url": "/database/images/vacation/vacation-20152.jpg"},
+                {"id": 12, "name": "vacation-20153.jpg", "url": "/database/images/vacation/vacation-20153.jpg"}
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Anniversary",
+            "photos": [
+                {"id": 13, "name": "anniversary1.jpg", "url": "/database/images/anniversary/anniversary1.jpg"},
+                {"id": 14, "name": "anniversary2.jpg", "url": "/database/images/anniversary/anniversary2.jpg"},
+                {"id": 15, "name": "anniversary3.jpg", "url": "/database/images/anniversary/anniversary3.jpg"}
+            ]
+        }
+    ],
+    "imagesNoFolder": [
+        {"id": 16, "name": "forest.jpg", "url": "/database/images/forest.jpg"}
+    ]
+}
