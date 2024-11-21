@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-import { Album } from "../types/Images"
+import { Folder } from "../types/File"
 
 type Props = {
-    item:Album
+    item:Folder
 }
 
 export const FolderItem = ({item}:Props) => {
