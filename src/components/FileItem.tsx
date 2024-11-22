@@ -3,7 +3,7 @@ import { File } from "../types/File"
 
 type Props = {
     item: File
-    onClick: ()=> void
+    onClick?: ()=> void
 }
 
 export const FileItem = ({item, onClick}:Props) => {

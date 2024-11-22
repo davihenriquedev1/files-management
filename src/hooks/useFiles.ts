@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import {getFiles} from '../api/api';
+import { getFiles } from '../api/api';
+import { DynamicStructure} from '../types/File';
 
 export const useFiles = () => {
-    const [data, setData] = useState<Object | null>(null);
+    const [data, setData] = useState<DynamicStructure | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 

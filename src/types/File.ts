@@ -12,8 +12,4 @@ export type Folder = {
     content?: (File | Folder)[];
 }
 
-export type DynamicPath = File | Folder;
-
-export type FileStructure = {
-    files: DynamicPath[]
-};
+export type DynamicStructure = (File | Folder)[];

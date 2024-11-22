@@ -1,11 +1,14 @@
-
-{ 
-    "images": [
+[ 
+    {
+        "id": 1,
+        "title": "images",
+        "type": "folder",
+        "content": [
             {
                 "id": 1,
                 "title": "Christmas",
                 "type" : "folder",
-                "photos": [
+                "content": [
                     {"id": 1, "name": "christmas1.jpg", "url": "/database/images/christmas/christmas1.jpg", "type": "image"},
                     {"id": 2, "name": "christmas2.jpg", "url": "/database/images/christmas/christmas2.jpg", "type": "image"},
                     {"id": 3, "name": "christmas3.jpg", "url": "/database/images/christmas/christmas3.jpg", "type": "image"}
@@ -15,7 +18,7 @@
                 "id": 2,
                 "title": "Family",
                 "type" : "folder",
-                "photos": [
+                "content": [
                     {"id": 4, "name": "family1.jpg", "url": "/database/images/family/family1.jpg", "type": "image"},
                     {"id": 5, "name": "family2.jpg", "url": "/database/images/family/family2.jpg", "type": "image"},
                     {"id": 6, "name": "family3.jpg", "url": "/database/images/family/family3.jpg", "type": "image"}
@@ -25,13 +28,12 @@
                 "id": 3,
                 "title": "Animals",
                 "type" : "folder",
-                "photos": [],
-                "subFolders": [
+                "content": [
                     {
                         "id": 6, 
                         "title":"Bob", 
                         "type" : "folder",
-                        "photos": [
+                        "content": [
                             {"id": 7, "name": "bob1.jpg", "url": "/database/images/bob/animals/bob1.jpg", "type": "image"},
                             {"id": 8, "name": "bob2.jpg", "url": "/database/images/bob/animals/bob2.jpg", "type": "image"}
                         ]
@@ -40,7 +42,7 @@
                         "id": 7, 
                         "title":"Nilson", 
                         "type" : "folder",
-                        "photos": [
+                        "content": [
                             {"id": 9, "name": "nilson1.jpg", "url": "/database/images/animals/nilson/nilson1.jpg", "type": "image"}
                         ]
                     }
@@ -50,7 +52,7 @@
                 "id": 4,
                 "title": "Vacation - 2015",
                 "type" : "folder",
-                "photos": [
+                "content": [
                     {"id": 10, "name": "vacation-20151.jpg", "url": "/database/images/vacation/vacation-20151.jpg", "type": "image"}, 
                     {"id": 11, "name": "vacation-20152.jpg", "url": "/database/images/vacation/vacation-20152.jpg", "type": "image"},
                     {"id": 12, "name": "vacation-20153.jpg", "url": "/database/images/vacation/vacation-20153.jpg", "type": "image"}
@@ -60,14 +62,31 @@
                 "id": 5,
                 "title": "Anniversary",
                 "type" : "folder",
-                "photos": [
+                "content": [
                     {"id": 13, "name": "anniversary1.jpg", "url": "/database/images/anniversary/anniversary1.jpg", "type": "image"},
                     {"id": 14, "name": "anniversary2.jpg", "url": "/database/images/anniversary/anniversary2.jpg", "type": "image"},
                     {"id": 15, "name": "anniversary3.jpg", "url": "/database/images/anniversary/anniversary3.jpg", "type": "image"}
                 ]
             },
             {"id": 16, "name": "forest.jpg", "url": "/database/images/forest.jpg", "type": "image"}
-        ],
-    "videos" : [],
-    "music" : []
-}
+        ]
+    },
+    {
+        "id": 2,
+        "title": "videos",
+        "type": "folder",
+        "content": []
+    },
+    {
+        "id": 3,
+        "title": "music",
+        "type": "folder",
+        "content": []
+    },
+    {
+        "id": 4,
+        "title": "document",
+        "type": "folder",
+        "content": []
+    }
+]
