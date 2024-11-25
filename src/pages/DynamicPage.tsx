@@ -6,26 +6,24 @@ import { NotFound } from "./NotFound";
 
 export const DynamicPage = () => {
     const { data, loading } = useFiles();
-    const params = useParams();
-    const slug = params.slug; // Captura múltiplos segmentos
+    const {"*": slug} = useParams(); // Captura múltiplos segmentos com uma string
     const splitSlug = slug?.split('/').filter(segment=> segment !== "");
 
-    if(loading) {
-        return <div className="animate-spin rounded-full w-5 h-5 border border-x-slate-800 border-t-slate-800"></div>
-    }
-
-    if(!data) {
-        return <div className="flex justify-center items-center text-3xl text-slate-500">No files here.</div>
-    }
-
-    const folder = splitSlug ? findFolder(splitSlug, data) : null;
+    const folder = splitSlug && data ? findFolder(splitSlug, data) : null;
 
     return (
         <div className="w-full">
             <ul className="flex gap-4">
-                { !slug && renderContent(data) }
-                { slug && folder && renderContent(folder?.content ?? []) }
-                { slug && !folder && <NotFound/> }
+                { loading &&
+                    <li className="animate-spin rounded-full w-5 h-5 border-2 border-slate-400 border-b-black/5"></li>
+                }
+                { !loading && !data &&
+                    <li className="flex w-full justify-center items-center text-3xl text-slate-500">No files here.</li>
+                }
+                { !loading && data && !slug && renderContent(data) }
+                { !loading && data && slug && !folder && <NotFound/> }
+                { !loading && data && slug && folder && renderContent(folder?.content ?? []) }
+                
             </ul>
         </div>
     );
