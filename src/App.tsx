@@ -4,14 +4,8 @@ import { MainRoutes, routesArray } from "./routes/MainRoutes";
 function App() {
 	const navigate = useNavigate();
 	const location = useLocation();
-	const routes = routesArray.map((item)=> item.path)
-	const currentIndex = routes.findIndex((route) => {
-		if (route.includes(':')) {
-			const baseRoute = route.split(':')[0];
-			return location.pathname.startsWith(baseRoute);
-		}
-		return route === location.pathname;
-	});
+	const routes = routesArray.map((item) => item.path);
+    const currentIndex = routes.findIndex(route => location.pathname.startsWith(route));
 
 	const hasPrevious = currentIndex > 0;
 	const hasNext = currentIndex < routes.length - 1;
