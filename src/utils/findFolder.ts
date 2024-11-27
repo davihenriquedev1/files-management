@@ -1,11 +1,12 @@
 import { DynamicStructure, Folder } from "../types/File";
 
 export const findFolder = (segments: string[], currentFolder:DynamicStructure): Folder | null => {
+
     const [currentSegment, ...restOfSegments] = segments;
 
     // procura a pasta correspondente ao segmento atual
     const nextFolder = currentFolder.find(
-        (item): item is Folder => item.type === 'folder' && item.title === currentSegment
+        (item): item is Folder => item.type === 'folder' && item.title.toLowerCase() === currentSegment
     );
 
     if(!nextFolder) {
