@@ -6,7 +6,7 @@ export const findFolder = (segments: string[], currentFolder:DynamicStructure): 
 
     // procura a pasta correspondente ao segmento atual
     const nextFolder = currentFolder.find(
-        (item): item is Folder => item.type === 'folder' && item.title.toLowerCase() === currentSegment
+        (item): item is Folder => item.type === 'folder' && item.title.replace(/\s/g, '').toLowerCase() === currentSegment
     );
 
     if(!nextFolder) {

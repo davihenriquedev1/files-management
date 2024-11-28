@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { Folder } from "../types/File"
 
 type Props = {
@@ -6,12 +6,17 @@ type Props = {
 }
 
 export const FolderItem = ({item}:Props) => {
+    const location = useLocation();
+    const currentPath = location.pathname;
+    
+    // Remover qualquer barra final no currentPath
+    const sanitizedCurrentPath = currentPath.replace(/\/$/, '');
+    const nextPath = `${sanitizedCurrentPath}/${item.title.replace(/\s/g, '').toLowerCase()}`;
 
     return (
-        <li className="flex flex-col transition-all mb-4 w-20">
+        <li className="flex flex-col transition-all mb-4 w-20" key={item.id} >
             <Link 
-                key={item.id} 
-                to={`${item.title.replace(/\s/g, '').toLowerCase()}`} 
+                to={nextPath} 
                 className="w-fit"
             >
                 <img src="/assets/images/folder.png" alt="" className="w-full"/>

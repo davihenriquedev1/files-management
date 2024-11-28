@@ -22,18 +22,19 @@ export const DynamicPage = () => {
 
     return (
         <div className="w-full">
+           
+            {loading && (
+                <div className="animate-spin rounded-full w-5 h-5 border-2 border-slate-400 border-b-black/5"></div>
+            )}
+            {!loading && !data && (
+                <div className="flex w-full justify-center items-center text-3xl text-slate-500">No files here.</div>
+            )}
+            {!loading && data && splitSlug.length > 0 && !folder && <NotFound />}
+
             <ul className="flex gap-4">
-                {loading && (
-                    <li className="animate-spin rounded-full w-5 h-5 border-2 border-slate-400 border-b-black/5"></li>
-                )}
-                {!loading && !data && (
-                    <li className="flex w-full justify-center items-center text-3xl text-slate-500">No files here.</li>
-                )}
                 {!loading && data && splitSlug.length === 0 && renderContent(data)} 
-                {!loading && data && splitSlug.length > 0 && !folder && <NotFound />} 
                 {!loading && data && splitSlug.length > 0 && folder && renderContent(folder?.content ?? [])}
             </ul>
         </div>
-
     );
 };
