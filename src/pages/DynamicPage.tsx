@@ -21,7 +21,7 @@ export const DynamicPage = () => {
     },[slug, data])
 
     return (
-        <div className="w-full">
+        <div className="w-full p-2 box-border">
            
             {loading && (
                 <div className="animate-spin rounded-full w-5 h-5 border-2 border-slate-400 border-b-black/5"></div>

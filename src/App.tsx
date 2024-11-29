@@ -58,15 +58,15 @@ function App() {
 						</button>
 					</div>
 				</div>
-				<div className="bg-gradient-to-b from-slate-800/40 to-slate-800/20 flex-1 p-[2px]">
-					<div className="text-sm text-white/70">{location.pathname}</div>
+				<div className="bg-gradient-to-b from-slate-800/40 to-slate-800/20 flex-1 p-[2px] ">
+					<div className="text-sm text-white/70 truncate">{location.pathname}</div>
 				</div>
-				<div className="flex bg-gradient-to-b from-slate-800/40 to-slate-800/20">
+				<div className="flex flex-1 md:flex-initial bg-gradient-to-b from-slate-800/40 to-slate-800/20">
 					<div className="flex px-2 justify-center items-center"></div>
-					<input type="text" title="search" className="outline-0"/>
+					<input type="text" title="search" className="outline-0 w-full"/>
 				</div>
 			</header>
-			<main className="flex min-h-screen w-full bg-white p-4">
+			<main className="flex min-h-screen w-full bg-white ">
 				<MainRoutes />
 			</main>
 			<iframe title="ads" className="fixed left-0 bottom-0 h-12 w-full text-center py-4 shadow-inner -z-1">

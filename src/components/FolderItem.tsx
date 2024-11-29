@@ -14,10 +14,10 @@ export const FolderItem = ({item}:Props) => {
     const nextPath = `${sanitizedCurrentPath}/${item.title.replace(/\s/g, '').toLowerCase()}`;
 
     return (
-        <li className="flex flex-col transition-all mb-4 w-20" key={item.id} >
+        <li className="flex flex-col transition-all mb-4 w-24" key={item.id} >
             <Link 
                 to={nextPath} 
-                className="w-fit"
+                className="w-fit mb-1"
             >
                 <img src="/assets/images/folder.png" alt="" className="w-full"/>
             </Link>

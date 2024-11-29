@@ -34,8 +34,8 @@
                         "title":"Bob", 
                         "type" : "folder",
                         "content": [
-                            {"id": 7, "name": "bob1.jpg", "url": "/database/images/bob/animals/bob1.jpg", "type": "image"},
-                            {"id": 8, "name": "bob2.jpg", "url": "/database/images/bob/animals/bob2.jpg", "type": "image"}
+                            {"id": 7, "name": "bob1.jpg", "url": "/database/images/animals/bob/bob1.jpg", "type": "image"},
+                            {"id": 8, "name": "bob2.jpg", "url": "/database/images/animals/bob/bob2.jpg", "type": "image"}
                         ]
                     },
                     {
